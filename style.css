@@ -30,8 +30,13 @@ footer {
     text-decoration: none;
   }
 
-  #construction{
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+  #main{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
     text-align: center;
+}
+
+.game{
+    text-align: center;
+    padding-bottom: 5rem;
 }

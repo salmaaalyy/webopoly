@@ -30,7 +30,7 @@ footer {
     text-decoration: none;
   }
 
-  #main{
+#main{
     padding-top: 5rem;
     padding-bottom: 3rem;
     text-align: center;
@@ -39,4 +39,11 @@ footer {
 .game{
     text-align: center;
     padding-bottom: 5rem;
+}
+
+#directions {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    background-color: --var(primary-blue);
 }

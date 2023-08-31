@@ -67,7 +67,7 @@ class Game {
       await this.delay(5000);
       p1Text.innerHTML=`player 1<br>$${this.p1.money}<br>${this.p1.properties.length} properties`;
       
-      await this.delay(5000);
+      await this.delay(3000);
       gameText.innerHTML=`player 2, it's your turn`;
       let b2 = this.board.getBoard(Math.floor(Math.random() * this.board.board.length));
       this.playerTurn(b2, this.p2, this.p1);
@@ -78,6 +78,7 @@ class Game {
       console.log(this.p1.properties);
       console.log(this.p2.properties);
 
+      await this.delay(1000);
       this.p1.money += 50;
       this.p2.money += 50;
       this.round += 1;
@@ -131,18 +132,17 @@ class Game {
           console.log('You now have ' + p.properties.length + ' properties.');
         });
     }
+    await this.delay(2000);
     this.didWin();
   }
 
   didWin() {
     if (this.p1.money <= 0 && this.p2.money > 0) {
-      this.p2.setWin();
+      this.p2.win = true;
       this.won(this.p2);
-    } else {
-      if (this.p1.money > 0 && this.p2.money <= 0) {
-        this.p1.setWin();
+    } else if (this.p1.money > 0 && this.p2.money <= 0) {
+        this.p1.win = true;
         this.won(this.p1);
-      }
     }
   }
   won(p) {

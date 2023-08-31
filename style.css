@@ -3,32 +3,7 @@ footer {
     padding-bottom: 2rem;
     text-align: center;
   }
-  
-  .icon {
-    color: var(--baby-blue);
-    padding: 0.25rem 1rem 0.25rem 1rem;
-  }
-  
-  .back-to-top {
-    color: var(--baby-blue);
-    text-decoration: underline;
-    padding-top: 0.5rem;
-  }
-
-  a.link:active {
-    text-decoration: none;
-  }
-  a:link {
-    text-decoration: none;
-  }
-  
-  a.link:visited {
-    text-decoration: none;
-  }
-  
-  a.link:hover {
-    text-decoration: none;
-  }
+ 
 
 #main{
     padding-top: 5rem;

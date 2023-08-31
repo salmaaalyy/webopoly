@@ -43,8 +43,19 @@
     </section>
 
     <section class="game">
-        <div>
-            <canvas id="board" width="500" height="300"></canvas>
+        <div id="board">            
+            <div>
+                <h2 id="round">round</h2>
+                <div class="row mb-5">
+                    <div id="p1" class="col"><h3>player 1: </h3></div>
+                    <div id="text" class="col"></div>
+                    <div id="p2" class="col"><h3>player 2: </h3></div>
+                </div>
+            </div>
+            <div>
+                <button id="agree" type="button" class="btn btn-primary me-5">agree</button>
+                <button id="next" type="button" class="btn btn-primary">next</button>
+            </div>
         </div>
         <div class="container-fluid">
             <button type="button" class="btn btn-primary mt-4" onclick="startGame()">start game</button>
@@ -54,9 +65,12 @@
     <section id="directions">
         <div class="container-fluid">
             <h3>how to play:</h3>
+            <p>press the start button!</p>
             <p>there can be only two players</p>
-            <p>each player starts with $1,000 and with every round, you must buy a property or pay any fees from the community chest</p>
+            <p>each player starts with $1,000</p>
+            <p>at each turn, press the agree button to continue</p>
             <p>each round is composed of two (2) turns, and after the round is finished, every player will receive $50</p>
+            <p>click on the next button after each player finishes their turn to continue onto the next round</p>
             <p>once your balance goes to 0 (or below), you automatically lose and the other player wins.</p>
             <p>the goal is to make as much money as possible!</p>
             <h4>best of luck!!</h4>

@@ -32,11 +32,13 @@ footer {
 
 #main{
     padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     text-align: center;
+    background-color: #a0ddff;
 }
 
 .game{
+    padding-top: 5rem;
     text-align: center;
     padding-bottom: 5rem;
 }
@@ -45,5 +47,9 @@ footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
-    background-color: --var(primary-blue);
+    background-color: #a0ddff;
+}
+
+#board{
+  display: none;
 }
